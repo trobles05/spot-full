@@ -20,9 +20,7 @@ const SingleItem = ({ id, name, image, banner, artist }) => {
         <div className="single-item__2lines">
           <p className="single-item__title">{name}</p>
         </div>
-        <p className="singçe-item__type">
-          {artist === undefined ? "Artista" : artist}
-        </p>
+        <p className="singçe-item__type">{artist ?? "Artista"}</p>
       </div>
     </div>
   );
